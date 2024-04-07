@@ -11,25 +11,28 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   
   <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
-  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-f736e62a.js">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-eded45c0.js">
   <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-4b066c51.css">
-  <link rel="stylesheet" href="/goit-js-hw-12/assets/index-1680c1ce.css">
+  <link rel="stylesheet" href="/goit-js-hw-12/assets/index-ed6da491.css">
 </head>
 
 <body>
-  <section>
-    <form class="form">
-      <input type="text" name="text" placeholder="Search images..." />
-      <button type="submit">Search</button>
-    </form>
+  <form class="search-form js-search-form">
+    <div class="form-group">
+      <label for="searchQuery"></label>
+      <input type="text" name="query" class="form-control" id="searchQuery" placeholder="Search images..."
+        autocomplete="off" />
+    </div>
+    <button type="submit" class="submit-btn">Search</button>
+  </form>
 
-    <div class="loader"></div>
-    <ul class="gallery"></ul>
-  </section>
-
-  <button type="button" class="load-more-button hidden">Load more</button>
-
+  <div class="gallery-container">
+    <ul class="images js-images-container"></ul>
+  </div>
+  <span class="loader hidden" role="status" aria-hidden="true"></span>
+  <button class="btn-show-more js-waiting-text hidden" aria-hidden="true">Load more </button>
   
+
 </body>
 
 </html>
