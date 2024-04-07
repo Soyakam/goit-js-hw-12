@@ -38,4 +38,3 @@ export function createMarkUp(images) {
     captionDelay: 250,
   });
 }
-
