@@ -67,7 +67,7 @@ async function onLoadMoreClick() {
   } catch (err) {
     console.log(err);
   }
-
+    myScroll();
   hideLoader();
   checkBtnStatus();
 }
@@ -114,4 +114,10 @@ function checkBtnStatus() {
   } else {
     showLoadMore();
   }
+}
+function myScroll() {
+    scrollBy({
+        "top": 1000,
+         behavior: "smooth"
+    })
 }
